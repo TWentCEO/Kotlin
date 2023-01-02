@@ -17,9 +17,9 @@
 
 안드로이드 앱은 자체적인 보안 샌드박스에 속하며, 다음과 같은 안드로이드 보안 기능으로 보호된다.
 * 안드로이드 운영체제는 멀티유저 Linux 시스템으로, 여기서 각 앱은 각기 다른 사용자와 같다.
-* 기본적으로 시스템이 **<span style = 'background-color: black'> 각 앱에 고유한 Linux ID를 할당한다.</span>** (이 ID는 시스템만 사용할 수 있으며 앱에서는 인식하지 못함). 시스템은 앱 안의 **<span style = 'background-color: black'> 모든 파일에 대해 권한을 설정하여 해당 앱에 할당된 사용자 ID만 이에 액세스할 수 있도록 합니다.</span>**
+* 기본적으로 시스템이 <span style = 'background-color: black'> 각 앱에 고유한 Linux ID를 할당한다.</span> (이 ID는 시스템만 사용할 수 있으며 앱에서는 인식하지 못함). 시스템은 앱 안의 <span style = 'background-color: black'> 모든 파일에 대해 권한을 설정하여 해당 앱에 할당된 사용자 ID만 이에 액세스할 수 있도록 합니다.</span>
 * 각 프로세스에는 자체적인 가상 머신(VM)이 있고, 그렇기 때문에 한 앱의 코드가 다른 앱과는 격리된 상태로 실행됩니다.
-* 기본적으로 모든 앱이 앱 자체의 Linux 프로세스에서 실행됩니다. **<span style = 'background-color: black'> Android 시스템은 앱의 구성 요소 중 어느 하나라도 실행해야 하는 경우 프로세스를 시작</span>**하고, **<span style = 'background-color: black'> 더 이상 필요 없거나 시스템이 다른 앱을 위해 메모리를 복구해야 하는 경우 해당 프로세스를 종료</span>**합니다.
+* 기본적으로 모든 앱이 앱 자체의 Linux 프로세스에서 실행됩니다. <span style = 'background-color: black'> Android 시스템은 앱의 구성 요소 중 어느 하나라도 실행해야 하는 경우 프로세스를 시작</span>하고, <span style = 'background-color: black'> 더 이상 필요 없거나 시스템이 다른 앱을 위해 메모리를 복구해야 하는 경우 해당 프로세스를 종료</span>합니다.
 
 이러한 방식으로 최소 권한의 원리를 구현한다고 한다.
 
